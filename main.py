@@ -21,7 +21,10 @@ print("What building do you want to count? \n\n"
 "16. Tube\n")
 
 data_choice = input("Enter the numbers from the options above : ")
-phi = 3.14 or 22/7
+// phi = 3.14 or 22/7
+phi = 3.14 // No reason to assign another value to a variable that will never receive a second value, as the first value has already been defined.
+// PLEASE never named pi as "phi" it's completely different 😭😭😭
+// And use math.pi instead of creating new pi variable
 
 if data_choice == "1":
     long_side = float(input("Enter the long-side number : "))
@@ -89,7 +92,7 @@ elif data_choice == "13":
 elif data_choice == "14" and "15":
     a = float(input("Insert the base area : "))
     t = float(input("Insert high side : "))
-    result = 1/3 * a * t
+    result = (1/3) * a * t
     print(f"The result of Quadrilateral Pyramid or Triangular Pyramid is {result}")
 elif data_choice == "16":
     r = (float(input("Insert the radius : ")))
